@@ -9,4 +9,13 @@
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+  transition: .2s;
+}
+
+.button:hover{
+  transform: scale(0.95);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: var(--secondary-color) 2px solid;
+  font-weight: bold;
 }
