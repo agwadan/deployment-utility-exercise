@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { Button } from './components/button';
 import { Input } from './components/input';
+import axios from 'axios';
 
 function App() {
   const [url, setUrl] = useState('');
@@ -9,6 +10,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(url);
+    axios.post('http://localhost:4000/', url).then(console.log(`success :-)`));
     setUrl('')
   }
 
