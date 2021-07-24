@@ -1,0 +1,14 @@
+{
+  "name": "deployment-utility-exercise",
+  "version": "1.0.0",
+  "description": "A utility that takes a url for an app image and deploys it to a container ochestration platform.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Agwa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
