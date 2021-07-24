@@ -6,7 +6,7 @@ export const Input = ({ placeholder, value, onChange }) => {
     <div>
       <input
         className={style.input}
-        type='text'
+        type='url'
         placeholder={placeholder}
         value={value}
         onChange={onChange}
