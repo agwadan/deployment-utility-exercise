@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Button } from './components/button';
 import { Input } from './components/input';
@@ -10,8 +10,13 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(url);
+    if (url === '') {
+      console.log(`Url => ${url}`);
+      return (alert('You haven\'t entered a url'))
+    }
     axios.post('http://localhost:4000/', url).then(console.log(`success :-)`));
-    setUrl('')
+    alert('success :-)');
+    setUrl('');
   }
 
   return (
