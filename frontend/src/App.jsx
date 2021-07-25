@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { Button } from './components/button';
 import { Input } from './components/input';
 import axios from 'axios';
+import isValidUrl from './tools';
 
 function App() {
   const [url, setUrl] = useState('');
@@ -16,6 +17,14 @@ function App() {
     } else {
       setError('');
     }
+
+    if (!isValidUrl(url)) {
+      setError('Please enter a valid url');
+      return;
+    } else {
+      setError('')
+    }
+
     axios.post('http://localhost:4000/', url).then(console.log(`success :-)`));
     alert('success :-)');
     setUrl('');
