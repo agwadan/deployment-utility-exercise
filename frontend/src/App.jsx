@@ -13,6 +13,8 @@ function App() {
     if (url === '') {
       setError('Please enter a url');
       return
+    } else {
+      setError('');
     }
     axios.post('http://localhost:4000/', url).then(console.log(`success :-)`));
     alert('success :-)');
