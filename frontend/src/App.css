@@ -2,6 +2,7 @@
   --primary-color: #008ac1;
   --primary-white: #ffffff;
   --secondary-color: #f7b33d;
+  --error: #ff3939;
 }
 
 h1{
@@ -10,4 +11,9 @@ h1{
 
 .App {
   text-align: center;
+}
+
+.error{
+  color: var(--error);
+  margin-bottom: 10px;
 }

@@ -6,13 +6,13 @@ import axios from 'axios';
 
 function App() {
   const [url, setUrl] = useState('');
+  const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(url);
     if (url === '') {
-      console.log(`Url => ${url}`);
-      return (alert('You haven\'t entered a url'))
+      setError('Please enter a url');
+      return
     }
     axios.post('http://localhost:4000/', url).then(console.log(`success :-)`));
     alert('success :-)');
@@ -27,6 +27,13 @@ function App() {
         value={url}
         onChange={e => setUrl(e.target.value)}
       />
+
+      {error && (
+        <div className='error'>
+          {error}
+        </div>
+      )}
+
       <Button
         label='Submit'
         onClick={handleSubmit}
