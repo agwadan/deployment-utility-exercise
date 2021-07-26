@@ -26,6 +26,8 @@
 * Open another terminal and navigate to the backend from the root directory using the command ```cd backend```.
 * Install dependencies using the command ```npm install```.
 * Run the backend using the command ```nodemon server```.
-* YOu should see this in your terminal.
+* You should see this in your terminal.
 
 ![backend](https://user-images.githubusercontent.com/30318555/126915169-10b94665-488a-401c-9c33-5af26a3b8790.png)
+
+* You need to install Docker on your local machine as well. check here [here](https://docs.docker.com/get-started/) to install docker depending on your operating system.
