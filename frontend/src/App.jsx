@@ -26,8 +26,7 @@ function App() {
     }
 
     axios.post('http://localhost:4000/', url).then(console.log(`success :-)`));
-    console.log(url);
-    alert('success :-)');
+    alert('The image has been submitted successfully');
     setUrl({ content: '' });
   }
 
