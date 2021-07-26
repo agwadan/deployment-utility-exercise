@@ -6,6 +6,11 @@
 
 ## Setting up
 
+### Prerequisites
+
+* You need to have git installed on your local computer.
+* You need to have node installed on your local computer.
+
 * clone the repository using the command ```git clone https://github.com/agwadan/deployment-utility-exercise.git``` in your terminal.
 
 ### Setting up the frontend

@@ -25,8 +25,6 @@ function App() {
       setError('')
     }
 
-    console.log(url);
-
     axios.post('http://localhost:4000/', url).then(console.log(`success :-)`));
     alert('success :-)');
     setUrl('');
