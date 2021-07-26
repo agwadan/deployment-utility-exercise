@@ -3,10 +3,10 @@ const app = express();
 const router = express.Router();
 const PORT = 4000;
 
-app.use(require('cors'));
+app.use(require('cors')());
 app.use(express.json());
 
-router.post('/', (req, res) => {
+app.post('/', (req, res) => {
   res.send(req.body);
   console.log(req.body);
 })
