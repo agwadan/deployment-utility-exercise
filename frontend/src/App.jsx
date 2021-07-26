@@ -6,19 +6,19 @@ import axios from 'axios';
 import isValidUrl from './tools';
 
 function App() {
-  const [url, setUrl] = useState('');
+  const [url, setUrl] = useState({ content: '' });
   const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (url === '') {
+    if (url.content === '') {
       setError('Please enter a url');
       return
     } else {
       setError('');
     }
 
-    if (!isValidUrl(url)) {
+    if (!isValidUrl(url.content)) {
       setError('Please enter a valid url');
       return;
     } else {
@@ -26,8 +26,9 @@ function App() {
     }
 
     axios.post('http://localhost:4000/', url).then(console.log(`success :-)`));
+    console.log(url);
     alert('success :-)');
-    setUrl('');
+    setUrl({ content: '' });
   }
 
   return (
@@ -35,8 +36,9 @@ function App() {
       <h1>Deployment Utility Exercise</h1>
       <Input
         placeholder='Enter the url'
-        value={url}
-        onChange={e => setUrl(e.target.value)}
+        name='url'
+        value={url.content}
+        onChange={e => setUrl({ content: e.target.value })}
       />
 
       {error && (

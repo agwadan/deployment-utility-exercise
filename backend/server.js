@@ -8,8 +8,8 @@ app.use(express.json());
 
 app.post('/', (req, res) => {
   res.send(req.body);
-  console.log(req.body);
+  console.log(req.body.content);
 })
 
-app.get('/', (req, res) => res.send('Hello World'));
+app.get('/', (req, res) => res.send('Deployment Utility Exercise'));
 app.listen(PORT, () => console.log(`App listening at http://localhost:${PORT}`));
