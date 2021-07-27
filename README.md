@@ -17,8 +17,9 @@
 * Type ```npm install``` to install the required dependencies.
 * Run the app using the command ```npm run dev``` and it will be available at the following location [http://127.0.0.1:3000](http://127.0.0.1:3000). 
 * The interface should look like this.
-* 
-* ![styling](https://user-images.githubusercontent.com/30318555/126914899-4eebdf29-e15e-4db9-b6f4-29f4a709cbb0.png)
+
+![frontend](https://user-images.githubusercontent.com/30318555/127167330-9c188a03-14f8-4624-9ab8-1af49b5f8085.png)
+
 
 
 ### Setting up the backend
