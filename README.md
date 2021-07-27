@@ -31,5 +31,7 @@
 ![backend](https://user-images.githubusercontent.com/30318555/126915169-10b94665-488a-401c-9c33-5af26a3b8790.png)
 
 ### Setting up Minikube
-* We will need Minikube to set up a local kubernetes cluster. Minikube can. Follow [this link](https://minikube.sigs.k8s.io/) to install minkube on your local computer depending on your operating system.
 * You need to install Docker on your local machine as well. check here [here](https://docs.docker.com/get-started/) to install docker depending on your operating system.
+* We will need Minikube and Kubectl to set up a local kubernetes cluster. Follow [this link](https://minikube.sigs.k8s.io/) to install minkube on your local computer depending on your operating system. 
+* You can install Kubectl [from here](https://kubernetes.io/docs/tasks/tools/) depending on your operating system.
+
