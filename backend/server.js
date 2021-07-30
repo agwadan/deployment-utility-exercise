@@ -16,4 +16,8 @@ app.post('/', (req, res) => {
 })
 
 app.get('/', (req, res) => res.send('Deployment Utility Exercise'));
-app.listen(PORT, () => console.log(`App listening at http://localhost:${PORT}`));
+
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => console.log(`App listening at http://localhost:${PORT}`));
+}
+module.exports = app;
