@@ -8,10 +8,10 @@ app.use(express.json());
 
 app.post('/', (req, res) => {
   if (!isValidUrl(req.body.content)) {
-    console.log('error');
-    return res.status(403).send('Please provide a valid url');
+    console.log('Invalid URL');
+    return res.status(403).send('Please provide a valid URL');
   }
-  res.send(req.body);
+  res.status(200).send(req.body);
   console.log(req.body);
 })
 
