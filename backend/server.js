@@ -13,7 +13,7 @@ app.post('/', (req, res) => {
     return res.status(403).send('Please provide a valid URL');
   }
 
-  exec(`docker run -p 3001:80 ${req.body.content}`, (error, stdout, stderr) => {
+  exec(`docker run -p 3002:80 ${req.body.content}`, (error, stdout, stderr) => {
     if (error) {
       console.log(`error: ${error.message}`);
       return;

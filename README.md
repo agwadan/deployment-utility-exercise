@@ -37,3 +37,13 @@ MiniKube is a utility you can use to run Kubernetes (k8s) on a local machine. A 
 * We will need Minikube and Kubectl to set up a local kubernetes cluster. Follow [this link](https://minikube.sigs.k8s.io/) to install minkube on your local computer depending on your operating system. 
 * You can install Kubectl [from here](https://kubernetes.io/docs/tasks/tools/) depending on your operating system.
 
+## Important Commands
+
+Below is a summary of some CLI commands that are helpful when interacting with docker.
+
+* `docker images` --------> List available images.
+* `docker ps` ------------> List all running containers.
+* `docker run <id/img>` --> Run a container. locally or online.
+* `docker run -p 3000:80 <id/img>` ---> run a container. (-p) on port 3000. (3000:80) map local port 3000 to container's port 80.
+* `docker stop <conteriner_id>` ------> stop running container.
+* `docker push username/image_name` --> push image to dockerhub.
