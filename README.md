@@ -47,3 +47,8 @@ Below is a summary of some CLI commands that are helpful when interacting with d
 * `docker run -p 3000:80 <id/img>` ---> run a container. (-p) on port 3000. (3000:80) map local port 3000 to container's port 80.
 * `docker stop <conteriner_id>` ------> stop running container.
 * `docker push username/image_name` --> push image to dockerhub.
+
+### Kubectl commands
+
+* `kubectl get deployments` ------> View deployments.
+* `kubectl create deployment <deployment-name> --image=<image-name>` ------> Create a new deployment to minikube.
