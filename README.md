@@ -52,3 +52,8 @@ Below is a summary of some CLI commands that are helpful when interacting with d
 
 * `kubectl get deployments` ------> View deployments.
 * `kubectl create deployment <deployment-name> --image=<image-name>` ------> Create a new deployment to minikube.
+* `kubectl get pods` ------> View pods.
+* `kubectl expose deployment <deployment-name> --type=LoadBalancer --port=8080` -----> Expose the Pod to the public internet.
+* `kubectl get services` ------> View the Service you created.
+* `kubectl delete service <service-name>` ------> Delete a service on minikube.
+* `kubectl delete deployment <deployment name>` ------> Delete a deployment on minikube.
