@@ -30,12 +30,16 @@
 
 ![backend](https://user-images.githubusercontent.com/30318555/126915169-10b94665-488a-401c-9c33-5af26a3b8790.png)
 
+* After this, you'll need to set up kubernetes on your local computer using minikube.
+
 ### Setting up Minikube
-MiniKube is a utility you can use to run Kubernetes (k8s) on a local machine. A Docker container or a Virtual Machine is required to run Minikube on a local machine. In this case, A Docker container is what is used.
+Minikube is a utility you can use to run Kubernetes (k8s) on a local machine. A Docker container or a Virtual Machine is required to run Minikube on a local machine. In this case, A Docker container is what is used.
 
 * You need to install Docker on your local machine. check [here](https://docs.docker.com/get-started/) to install docker depending on your operating system.
 * We will need Minikube and Kubectl to set up a local kubernetes cluster. Follow [this link](https://minikube.sigs.k8s.io/) to install minkube on your local computer depending on your operating system. 
 * You can install Kubectl [from here](https://kubernetes.io/docs/tasks/tools/) depending on your operating system.
+
+* 
 
 ## Important Commands
 
@@ -48,8 +52,10 @@ Below is a summary of some CLI commands that are helpful when interacting with d
 * `docker stop <conteriner_id>` ------> stop running container.
 * `docker push username/image_name` --> push image to dockerhub.
 
-### Kubectl commands
+### Minikube and Kubectl Commands
 
+* `minikube start` -----> Start up minikube.
+* `minikube dashboard` -----> Open the Kubernetes dashboard in a browser.
 * `kubectl get deployments` ------> View deployments.
 * `kubectl create deployment <deployment-name> --image=<image-name>` ------> Create a new deployment to minikube.
 * `kubectl get pods` ------> View pods.
